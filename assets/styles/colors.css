@@ -1,0 +1,12 @@
+/* palette de couleurs */
+
+:root{
+    --white: #FFFFFF;
+    --gradient-white: #F2CEF2;
+    --purple: #9E91B7;
+    --pink: #DF99F2;
+    --bleue: #021740;
+    --gradient-bleue1: #3D2DA6;
+    --gradient-bleue2: #07338C;
+    
+}

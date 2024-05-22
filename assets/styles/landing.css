@@ -1,0 +1,203 @@
+@import url(fonts.css);
+@import url(colors.css);
+@import url(widgets.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../Illustrations_Logo/All/arrière_plan.png');
+}
+
+/* disposition globale enttête*/
+.entete{
+    display: flex;
+    padding: 50px 10%;
+    justify-content: space-between;
+   /* border: 1px solid var(--white);*/
+}
+/* */
+.entete .right-menu>a{
+    margin: 0 20px;
+    text-decoration-line: none;
+    color: var(--white);
+    font-family: 'BEYNO' ;
+    font-size: large;
+}
+/* effet survole lien vers pages*/
+.entete .right-menu>a:hover{
+    text-decoration-line: underline;
+    color: var(--purple);
+}
+
+/* hero*/
+.hero{
+    
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+   /* border: 1px solid var(--white);*/
+    padding-left: 10%;
+}
+.descript h1{
+    margin: 0px;
+    font-family: 'Panthera';
+    color: var(--purple);
+    font-size: 50px;
+}
+.descript h2{
+    margin: 0px;
+    font-family: 'BEYNO';
+    color: var(--purple);
+    font-size: 40px;
+}
+.descript p{
+    margin: 40px 0;
+    font-size: 1em;
+    color: var(--white);
+    font-family: 'Cantarel';
+    }
+
+.illustrat-descript{
+    transform: scale(.8);
+}
+.descript a{color: var(--white);}
+
+
+/* stuck widget|sidelink*/ 
+
+.sidelink{
+    margin-top: 5px;
+    margin-left: 30px;
+    position: fixed;
+   /* border: 1px solid var(--white);*/
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* widget */
+.widget{
+    display: flex;
+}
+.linelong,.lineshort{
+    width: 4px;
+    background-color: var(--purple);
+    }
+.sidelink .linelong{
+    height: 60vh;
+}
+.sidelink, .lineshort{
+    height: 70%;
+    align-self: center;
+    }
+.sidelink .left-group{
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+.sidelink .left-group .list-link{
+    display: grid;
+    height: 30%;
+    align-items: end;
+    }
+
+/* slide */
+.slides{
+    margin-left: 10%;
+    display: flex ;
+    margin-top: 40px; 
+    height: 250px;
+}
+
+.slide{
+background-color: var(--bleue);
+display: flex;
+
+}
+.slide .desc-slide{
+    margin: 0 30px;
+}
+
+.slide .desc-slide h1{
+    font-family: 'BEYNO';
+    color: var(--purple);
+        }
+
+.slide .desc-slide p{
+    text-align: justify;
+    color: var(--white);
+    font-family: 'Cantarel';
+        }
+.slide .desc-slide a{
+    color: var(--white);
+}
+
+.slide img:not(.suivant img){
+    padding-left: 40px;
+}
+
+.slide img:hover:not(.suivant img){
+    transform: scale(1.1);
+}
+
+.suivant{
+align-self: center;
+}
+
+/* naissance d'un prince*/
+
+.section-g{
+ /*   border: 1px solid var(--white);*/
+    margin: 80px 10%;
+    display: flex;
+}
+
+.boxes .box h1{
+    padding: 15px;
+    font-family: 'BEYNO';
+    color: var(--purple);
+}
+.boxes .box p{
+    padding: 15px;
+    text-align: justify;
+    color: var(--white);
+    font-family: 'Cantarel';
+}
+
+
+.boxe2{
+    height: 570px;
+    background-color: var(--white);
+    border-radius: 20px;
+    align-self:center;
+
+    }
+    .boxe2 img{
+        transform: scale(0.7);
+        position: relative;
+        top:-250px
+        }
+
+
+@media (max-width:1500px){
+    /* responsive hero */
+    .hero{
+        flex-direction: column;
+    }
+    .boxes /*, .slides*/{
+        flex-direction: column;
+        margin: 0 2%;
+        }
+        .slide img:not(.suivant img){
+            width: 320px;
+        }
+        .slide{
+            margin-bottom: 10px;
+        }
+        .suivant img{
+        visibility: hidden;
+        }
+}
