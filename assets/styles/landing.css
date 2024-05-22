@@ -2,34 +2,6 @@
 @import url(colors.css);
 @import url(widgets.css);
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-image: url('../Illustrations_Logo/All/arrière_plan.png');
-}
-
-/* disposition globale enttête*/
-.entete{
-    display: flex;
-    padding: 50px 10%;
-    justify-content: space-between;
-   /* border: 1px solid var(--white);*/
-}
-/* */
-.entete .right-menu>a{
-    margin: 0 20px;
-    text-decoration-line: none;
-    color: var(--white);
-    font-family: 'BEYNO' ;
-    font-size: large;
-}
-/* effet survole lien vers pages*/
-.entete .right-menu>a:hover{
-    text-decoration-line: underline;
-    color: var(--purple);
-}
-
 /* hero*/
 .hero{
     
@@ -103,6 +75,13 @@ body {
     height: 30%;
     align-items: end;
     }
+    .left-group .list-link>*:hover{
+        filter: invert(22%) sepia(58%) brightness(100%) contrast(1200%);
+    }
+
+
+
+
 
 /* slide */
 .slides{
@@ -149,9 +128,9 @@ align-self: center;
 
 /* naissance d'un prince*/
 
-.section-g{
+.section-a{
  /*   border: 1px solid var(--white);*/
-    margin: 80px 10%;
+    margin: 40px 10% 0 10%;
     display: flex;
 }
 
@@ -164,22 +143,95 @@ align-self: center;
     padding: 15px;
     text-align: justify;
     color: var(--white);
-    font-family: 'Cantarel';
+    font-family: 'Cantarell';
+}
+
+.section-a .boxe2{
+    /*border: 1px solid var(--purple);*/
+    margin: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    }
+.boxe2 .photo{
+   /* border: 1px solid red;*/
+    height: 150px;
+}
+.boxe2 img{
+    position: relative;
+    top:-145px;
+    transform: scale(0.7);
+    }
+.boxe2 .cadre{
+    padding: 250px 20px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    background-color: var(--white);
+}
+.cadre p > *{
+    font-family: 'cantarell';
+    font-size: small;
+    line-height: 4px;
+}
+.cadre h1{ text-align: center;}
+.cadre p{  font-family: 'cantarell'; margin: 5px; }
+.cadre p span{  font-weight: bolder; }
+.btn-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* occupé l'espace restant du btn-bar en display flex*/
+.last{
+    flex-grow: 1;
+}
+
+.btn-bar .btn a{
+    color: var(--purple);
+    text-decoration-line: none;
+    font-family: 'cantarell' ;
+    font-size: 0.8em;
+}
+
+.btn-bar .btn a:hover{
+    color: var(--white);
+    font-size: 0.9em;
 }
 
 
-.boxe2{
-    height: 570px;
-    background-color: var(--white);
-    border-radius: 20px;
-    align-self:center;
+/* .section-b >*  avec display flex de ses items*/
+.section-b >* { 
+   /* border: 1px solid var(--white);*/
+   margin: 0 10%;
+   display: flex;
+   align-items: center;
+}
 
-    }
-    .boxe2 img{
-        transform: scale(0.7);
-        position: relative;
-        top:-250px
-        }
+ /* section-c */
+.section-c{
+    height: 600px;
+    background-image: url("../Illustrations_Logo/Accueil/Pantherhome7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.formulaire{
+    border-radius: 60px;
+    margin: 40px 30%;
+    min-width: 350PX;
+    padding: 40px;
+    background: linear-gradient(rgba(250, 250, 250, 0.767), rgba(47, 58, 71, 0.164));
+}
+.formulaire form{
+    text-align: center;
+}
+
+.formulaire form p{ font-family: 'cantarell';}
+.formulaire form h1{font-family: 'cantarell';}
+
+
+
 
 
 @media (max-width:1500px){
@@ -187,7 +239,7 @@ align-self: center;
     .hero{
         flex-direction: column;
     }
-    .boxes /*, .slides*/{
+    .boxes, .slides{
         flex-direction: column;
         margin: 0 2%;
         }
@@ -200,4 +252,27 @@ align-self: center;
         .suivant img{
         visibility: hidden;
         }
+/* disposer section g en colonne si reduction taille Ecran */
+        .section-a{
+            flex-direction: column;
+            }
+        .section-a .boxe2{
+            flex-direction: column;
+            }
+        .boxe2 .cadre{
+                padding: 200px 20px;
+                padding-bottom: 0px;
+                }
+
+        .last{
+            flex-grow: 0;
+        }
+/*
+        .section-footer{
+            display: flex;
+            flex-direction: column;
+        }
+*/
+        .formulaire{
+            margin: 40px 0;}
 }

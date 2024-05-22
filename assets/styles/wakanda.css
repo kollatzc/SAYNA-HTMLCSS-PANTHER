@@ -1,0 +1,90 @@
+@import url(fonts.css);
+@import url(colors.css);
+@import url(widgets.css);
+
+/* hero*/
+.hero{
+    background-image: url("../Illustrations_Logo/Wakanda/Pantherwakanda1.png");
+    background-repeat: no-repeat;
+    height: 1131px;
+    display:flex ;
+    align-items: center;
+    max-width: 100%;
+   /* border: 1px solid var(--white);*/
+    padding-left: 10%;
+}
+.descript h1{
+
+    font-family: 'BEYNO';
+    color: var(--purple);
+    font-size: 80px;
+}
+.descript h2{
+    margin: 0px;
+    font-family: 'Wakanda Forever';
+    letter-spacing: 15px;
+    color: var(--purple);
+    font-size: 40px;
+}
+.descript p{
+    margin: 40px 65% 40px 0;
+    font-size: 1.1em;
+    color: var(--white);
+    font-family: 'Cantarel';
+    text-align: justify;
+    }
+
+.illustrat-descript{
+    transform: scale(.8);
+}
+.descript a{color: var(--white);}
+
+
+/* .section-b >*  avec display flex de ses items*/
+.section-b >* { 
+    background-image: url("../Illustrations_Logo/Wakanda/Pantherwakanda2.png");
+    /* border: 1px solid var(--white);*/
+    background-repeat: no-repeat;
+    margin: 0 10%;
+    column-count: 2;
+    align-items: center;
+ }
+ .boxes .box h1{
+    padding: 15px;
+    font-family: 'BEYNO';
+    color: var(--purple);
+}
+.boxes .box p{
+    padding: 15px;
+    text-align: justify;
+    color: var(--white);
+    font-family: 'Cantarell';
+}
+
+/* mettre les dimensions du Iframe au standard des textes */
+iframe{
+    width:calc(100% - 30px);
+    margin-left: 15px;
+}
+
+.box img{
+    width: 100%;
+}
+
+ 
+
+
+@media (max-width:1500px){
+
+    .descript p{
+        margin: 40px 35% 40px 0;
+        font-size: 1.2em;
+        color: var(--white);
+        font-family: 'Cantarel';
+        text-align: justify;
+        }
+        .section-b >* {
+            column-count: 1;
+         }
+
+}

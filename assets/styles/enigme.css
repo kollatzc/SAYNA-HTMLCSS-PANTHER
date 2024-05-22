@@ -1,0 +1,58 @@
+@import url(fonts.css);
+@import url(colors.css);
+@import url(widgets.css);
+
+
+.hero{
+    background-image: url("../Illustrations_Logo/Enigme/Pantherenigme1.png");
+    background-repeat: no-repeat;  
+    display: grid;
+    justify-items: end;
+    height: 1484px;
+    max-width: 100%;
+    padding: 0 10%;
+}
+
+.descript{
+    margin: 100px 0 100px 0;
+    height: 70vh;
+}
+
+.hand-made{
+    width: 784px;
+}
+
+.hand-made .ellipse{
+    position: relative;
+    top: 100px;
+}
+.hand-made p{
+    width: 65%;
+    position: relative;
+    left: 15%;
+    top: -225px;
+    color: var(--white);
+    font-family: 'Cantarel';
+}
+.titre-jst {
+    text-align: center;
+}
+
+.titre-jst .titre-principal1{
+letter-spacing: 8px;
+
+}
+.titre-jst .titre-principal2{
+    letter-spacing: 4px;
+    }
+.descript h1{
+    font-family: 'BEYNO';
+    color: var(--purple);
+    font-size: 3em;
+    margin: 0;
+}
+
+.illustrat-descript{
+    transform: scale(.8);
+}
+.descript a{color: var(--white);}

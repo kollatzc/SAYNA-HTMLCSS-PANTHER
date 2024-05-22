@@ -1,3 +1,12 @@
+@import url(colors.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('../Illustrations_Logo/All/arrière_plan.png');
+}
+
 form .bouton{
     width: 174px;
     height: 54px;
@@ -22,8 +31,172 @@ form .input-text-mail{
     width: 520px;
     height: 56px;
     padding: 0px 20px;
+    margin: 10px;
     border-radius: 38px;
     border: 1px solid #fff;
     background-color: transparent;
 }
 
+.btn{
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid var(--bleue);
+    border-radius: 5px;
+    background-color:var(--gradient-bleue2) ;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color:var(--bleue) ;
+}
+
+/* disposition globale enttête*/
+.entete{
+    display: flex;
+    padding: 50px 10%;
+    justify-content: space-between;
+   /* border: 1px solid var(--white);*/
+}
+/* */
+.entete .right-menu>a{
+    margin: 0 20px;
+    font-family: 'BEYNO' ;
+    font-size: large;
+    color: var(--purple);
+}
+
+.entete .right-menu>a:not(.self){
+    margin: 0 20px;
+    text-decoration-line: none;
+    color: var(--white);
+    font-family: 'BEYNO' ;
+    font-size: large;
+}
+
+/* effet survole lien vers pages*/
+.entete .right-menu>a:hover{
+    text-decoration-line: underline;
+    color: var(--purple);
+}
+.entete .left-logo:hover{
+    filter: invert(10%) sepia(40%) saturate(2000%) hue-rotate(240deg) brightness(90%);
+}
+
+
+
+
+/*  Footer  */
+footer{
+    background: linear-gradient(180deg, #3D2DA6 0%, #02174090.43%);
+}
+
+.section-footer{
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    /*grid-template-areas:"sanay-marvel pages retrouves-nous";*/
+}
+.sanay-marvel{
+    background-image: url("../Illustrations_Logo/All/footer1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-color: #a62d2d;*/
+    grid-row: 1/5;
+    grid-column: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stack img:hover{
+transform: scale(1.2);
+    
+}
+.pages{
+   /* background-color: #139aac;
+       height: calc(50vh / 2);
+   */
+   height: calc(50vh / 2);
+    grid-row: 1;
+    grid-column: 2;
+
+}
+.pages h1,.retrouves-nous h1{
+    color: var(--white);
+    font-family: 'Cantarell';
+    letter-spacing:2.8px;
+}
+
+.pages a, .droits p{
+    color: var(--white);
+    margin: 2px;
+    font-family: 'Cantarell';
+    
+
+}
+
+.pages a{
+  text-decoration-line: none;
+  display: block;
+}
+
+.pages a:hover{
+    text-decoration-line: underline;
+    color: var(--purple);
+  }
+
+.retrouves-nous{
+   /* background-color: #9aa62d;
+       height: calc(50vh / 2);
+   */
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.retrouves-nous .sociaux a{
+    margin: 10px;
+}
+.retrouves-nous .sociaux a img:hover{
+    transform: scale(1.1);
+}
+
+
+.droits{
+   /* background-color: #2d80a6;*/
+    height: calc(50vh / 2);
+    grid-row: 4;
+    grid-column: 2/4;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1500px){
+    
+    form .input-text-mail{
+        width: 70%;
+        padding: 0px 20px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 1px solid #fff;
+        background-color: transparent;
+    }
+
+    .section-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
