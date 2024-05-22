@@ -5,20 +5,20 @@
 
 .hero{
     background-image: url("../Illustrations_Logo/Enigme/Pantherenigme1.png");
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
     display: grid;
     justify-items: end;
     height: 1484px;
-    max-width: 100%;
+    background-size:cover;
     padding: 0 10%;
 }
 
 .descript{
-    margin: 100px 0 100px 0;
+    margin: 30% 0 100px 0;
     height: 70vh;
 }
 
-.hand-made{
+.hand-made, .underline{
     width: 784px;
 }
 
@@ -56,3 +56,68 @@ letter-spacing: 8px;
     transform: scale(.8);
 }
 .descript a{color: var(--white);}
+
+.quote p{
+  margin: 0px 20% 0 10%;
+    font-family: 'Wakanda Forever';
+    letter-spacing: 15px;
+    color: var(--purple);
+    font-size: 2em;
+}
+
+
+
+/* section transcription */
+
+.transcription{
+    min-width: 800px;
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side h4{
+    color: var(--white);
+    font-family: 'Cantarell';
+
+}
+.left-side p {
+    color: var(--white);
+    text-transform: capitalize;
+    font-family: 'Cantarell';
+
+}
+
+.left-side p span{
+    font-family: 'Wakanda Forever';
+}
+
+.form-reponse {
+    margin-top: 150px;
+    text-align: center;
+}
+.form-reponse .input-text-mail {
+    text-align: left;
+    margin-left:0 ;
+}
+
+.as-tu{
+    text-align: left;
+}
+input:focus {
+    color: var(--purple);
+}
+
+
+@media (max-width:1500px){
+
+
+    .transcription{
+flex-direction: column-reverse;
+margin-bottom: 40px;
+    }
+    .as-tu{
+        text-align: center;
+    }
+}

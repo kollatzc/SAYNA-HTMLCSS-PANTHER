@@ -18,6 +18,8 @@
     font-family: 'BEYNO';
     color: var(--purple);
     font-size: 80px;
+    margin-right: 10%;
+    overflow-wrap: break-word;
 }
 .descript h2{
     margin: 0px;
@@ -71,7 +73,8 @@ iframe{
     width: 100%;
 }
 
- 
+
+
 
 
 @media (max-width:1500px){

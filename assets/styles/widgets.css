@@ -1,5 +1,5 @@
 @import url(colors.css);
-
+ 
 body {
     margin: 0;
     padding: 0;
@@ -87,11 +87,13 @@ form .input-text-mail{
 
 /*  Footer  */
 footer{
+    
     background: linear-gradient(180deg, #3D2DA6 0%, #02174090.43%);
 }
 
 .section-footer{
-    margin: 20px 5%;
+
+    /*margin: 20px 5%;*/
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     /*grid-template-areas:"sanay-marvel pages retrouves-nous";*/
@@ -193,10 +195,16 @@ transform: scale(1.2);
         border: 1px solid #fff;
         background-color: transparent;
     }
-
+footer{
+    background: none;
+}
     .section-footer{
+        
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
+
+
+    
 
 }

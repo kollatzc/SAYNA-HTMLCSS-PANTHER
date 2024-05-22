@@ -85,7 +85,7 @@
 
 /* slide */
 .slides{
-    margin-left: 10%;
+    margin: 10%;
     display: flex ;
     margin-top: 40px; 
     height: 250px;
@@ -109,6 +109,7 @@ display: flex;
     text-align: justify;
     color: var(--white);
     font-family: 'Cantarel';
+    font-size: .7em;
         }
 .slide .desc-slide a{
     color: var(--white);
@@ -132,6 +133,7 @@ align-self: center;
  /*   border: 1px solid var(--white);*/
     margin: 40px 10% 0 10%;
     display: flex;
+    min-width: 800px;
 }
 
 .boxes .box h1{
@@ -199,6 +201,10 @@ align-self: center;
     font-size: 0.9em;
 }
 
+.section-b{
+    min-width: 800px;
+    margin: 0 10%;
+}
 
 /* .section-b >*  avec display flex de ses items*/
 .section-b >* { 
@@ -243,18 +249,25 @@ align-self: center;
         flex-direction: column;
         margin: 0 2%;
         }
+        .slides{
+    max-width: 100%;
+            }
         .slide img:not(.suivant img){
             width: 320px;
         }
         .slide{
             margin-bottom: 10px;
+            min-width: 800px;
         }
+        .slide .desc-slide p{
+            font-size: 1em;
+                }
         .suivant img{
         visibility: hidden;
         }
-/* disposer section g en colonne si reduction taille Ecran */
+/* disposer section en colonne si reduction taille Ecran */
         .section-a{
-            flex-direction: column;
+            margin-top: 800px; /* constrain overlapping sections*/
             }
         .section-a .boxe2{
             flex-direction: column;
@@ -274,5 +287,6 @@ align-self: center;
         }
 */
         .formulaire{
+            min-width: 800px;
             margin: 40px 0;}
 }
